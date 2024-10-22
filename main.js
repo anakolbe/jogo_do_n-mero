@@ -29,4 +29,37 @@ Palpites.textContent += palpitesUsuario + " ";
    ultimoResultado.style.backgroundColor = "red";
    if (palpiteUsuario < numeroAleatorio) {
      baixoOuAlto.textContent = "O último palpite foi muito baixo";
-     
+   } else if (palpiteUsuario < numeroAleatorio) {
+       baixoOuAlto.textContent = "O último palpite foi muito alto";
+   }
+ }
+
+contagemPalpites++;
+    campoPalpite.value = "";
+    campoPalpite.focus();
+}
+
+envioPalpite.addEventListener('click', verificarPalpite);
+
+function finalizarJogo() {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReiniciar = document.createElement('button');
+    document.body.apprendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
+}
+
+
+function reiniciarJogoI) {
+    contagemPalpite = 1;
+    const paragrafoReiniciar = document.querySelectorAll('.paragrafosResultado p')
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+        paragrafoReiniciar.textContent = "";
+    }
+
+botaoReiniciar.parentNode.removechild(botaoReiniciar);
+    campoPalpite.disabled = false;
+    envioPalpite.disabled = false;
+    campoPalpite.value = "";
+    campoPalpite.focus();
+    ultimoResultado.style.backgroundColor = 'white
