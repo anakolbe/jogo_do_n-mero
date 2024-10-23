@@ -62,4 +62,6 @@ botaoReiniciar.parentNode.removechild(botaoReiniciar);
     envioPalpite.disabled = false;
     campoPalpite.value = "";
     campoPalpite.focus();
-    ultimoResultado.style.backgroundColor = 'white
+    ultimoResultado.style.backgroundColor = 'white';
+    numeroAleatorio = math.floor(math.random() * 100) + 1;
+}
