@@ -50,10 +50,10 @@ function finalizarJogo() {
 }
 
 
-function reiniciarJogoI) {
-    contagemPalpite = 1;
+function reiniciarJogo() {
+    contagemPalpites = 1;
     const paragrafoReiniciar = document.querySelectorAll('.paragrafosResultado p')
-    for (const paragrafoReiniciar of paragrafosReiniciar) {
+    for (const paragrafosReiniciar of paragrafosReiniciar) {
         paragrafoReiniciar.textContent = "";
     }
 
@@ -63,5 +63,5 @@ botaoReiniciar.parentNode.removechild(botaoReiniciar);
     campoPalpite.value = "";
     campoPalpite.focus();
     ultimoResultado.style.backgroundColor = 'white';
-    numeroAleatorio = math.floor(math.random() * 100) + 1;
+    numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
