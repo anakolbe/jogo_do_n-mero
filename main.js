@@ -7,15 +7,15 @@ let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
     let contagemPalpites = 1;
     let botaoReiniciar;
 
-function verificarPalpite() {
-  const palpiteUsuario = Number(campoPalpite.value);
-  if (contagemPalpites === 1) {
-    palpites.textContnt = "Palpites anteriores: ";
-  }
+    function verificarPalpite() {
+      const palpiteUsuario = Number(campoPalpite.value);
+      if (contagemPalpites === 1) {
+        palpites.textContnt = "Palpites anteriores: ";
+      }
 
-Palpites.textContent += palpitesUsuario + " ";
+      palpites.textContent += palpitesUsuario + " ";
 
- if (palpiteUsuario === numeroAleatorio) {
+      if (palpiteUsuario === numeroAleatorio) {
    ultimoResultado.textContent = parabéns! Você acertou!";
      ultimoResultado.style.backgroundColor = "green";
    baixoOuAlto.textContent = "";
