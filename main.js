@@ -46,6 +46,7 @@ function finalizarJogo() {
     envioPalpite.disabled = true;
     botaoReiniciar = document.createElement('button');
     document.body.apprendChild(botaoReiniciar);
+    ...
     botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
 
