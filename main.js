@@ -5,7 +5,7 @@ let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
     const envioPalpite = document.querySelector('.envioPalpite');
     const campoPalpite = document.querySelector('.campoPalpite');
     let contagemPalpites = 1;
-    let botaoReiniciar;
+    let botaoReiniciar; 
 
     function verificarPalpite() {
       const palpiteUsuario = Number(campoPalpite.value);
